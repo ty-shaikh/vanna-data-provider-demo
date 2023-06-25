@@ -26,16 +26,16 @@ if my_question == '' or my_question is None:
     if st.button("Which five countries had the highest life expectancy in 2020?"):
         my_question = "Which five countries had the highest life expectancy in 2020?"
 
-    elif st.button("What is the cumulative rainfall in each country in 2023?"):
+    if st.button("What is the cumulative rainfall in each country in 2023?"):
         my_question = "What is the cumulative rainfall in each country in 2023?"
 
-    elif st.button("What is the unemployment rate for New York City and New York State in 2015?"):
+    if st.button("What is the unemployment rate for New York City and New York State in 2015?"):
         my_question = "What is the unemployment rate for New York City and New York State in 2015?"
 
-    elif st.button("Which states in the United States have the highest median age in 2017? Show the top 15"):
+    if st.button("Which states in the United States have the highest median age in 2017? Show the top 15"):
         my_question = "Which states in the United States have the highest median age in 2017? Show the top 15"
 
-    elif st.button("Which states in the United States had the highest population growth from 2010 to 2020? Show only the top 10"):
+    if st.button("Which states in the United States had the highest population growth from 2010 to 2020? Show only the top 10"):
         my_question = "Which states in the United States had the highest population growth from 2010 to 2020? Show only the top 10"
 
 sql_tab, table_tab, plotly_tab, vanna_tab = st.tabs([':game_die: SQL', ':table_tennis_paddle_and_ball: Table', ':snake: Plotly Code', ':bulb: Vanna Code'])
